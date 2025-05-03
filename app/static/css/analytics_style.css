@@ -1,0 +1,80 @@
+.form-wrapper {
+    background: #fff;
+    max-width: 75%;
+    margin: 40px auto 0 auto;
+    padding: 28px 32px;
+    box-shadow: 0 2px 8px rgba(63, 89, 136, 0.12);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.input-row {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.input-row select,
+.input-row input[type="text"] {
+    padding: 10px 12px;
+    font-size: 1em;
+    border: 1px solid #c6d4e1;
+    border-radius: 6px;
+    background: #f6f9fc;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.input-row select:focus,
+.input-row input[type="text"]:focus {
+    border: 1.5px solid #3063ef;
+}
+
+.input-row input[type="text"] {
+    flex: 1;
+}
+
+.input-row button {
+    padding: 10px 25px;
+    background: #3063ef;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.input-row button:hover {
+    background: #254cb2;
+}
+
+.result-div {
+    min-height: 52px;
+    width: 100%;
+    background: #f9fafc;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(63, 89, 136, 0.06);
+    font-size: 1.07em;
+    color: #345;
+}
+
+.sample-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.sample-data-table th,
+.sample-data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.sample-data-table th {
+    background-color: #f0f0f5;
+    font-weight: bold;
+}

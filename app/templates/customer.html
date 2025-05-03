@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+    <link rel="stylesheet" href="../static/css/home_style.css">
+    <link rel="stylesheet" href="../static/css/customer_style.css?v=1">
+</head>
+<body>
+<div class="sidebar">
+    <a href="customer" class="nav-btn">Customer</a>
+    <a href="product" class="nav-btn">Product</a>
+    <a href="invoice" class="nav-btn">Invoice</a>
+    <a href="analytics" class="nav-btn">Analytics</a>
+</div>
+<div class="main-content">
+
+    <button id="add-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             class="lucide lucide-user-plus-icon lucide-user-plus">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <line x1="19" x2="19" y1="8" y2="14"/>
+            <line x1="22" x2="16" y1="11" y2="11"/>
+        </svg>
+        Add
+    </button>
+
+    <table id="dataTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Dynamic rows go here -->
+        </tbody>
+    </table>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Add New User</h2>
+        <form id="addForm">
+            <label>
+                Name:<br>
+                <input type="text" id="nameInput" required>
+            </label><br><br>
+            <label>
+                Phone:<br>
+                <input type="text" id="phoneInput" required>
+            </label><br><br>
+            <label>
+                Address:<br>
+                <input type="text" id="addressInput" required>
+            </label><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="../static/js/customer_page.js"></script>
+</body>
+</html>

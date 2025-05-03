@@ -1,0 +1,237 @@
+#invoice-content {
+    background: #fff;
+    min-height: 200px;
+    padding: 40px 10px 20px 10px;
+    max-width: 850px;
+    margin-left: 15%;
+}
+
+.customer-form-row {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 32px;
+    padding: 24px 32px 16px 32px;
+    max-width: 900px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* aligns input and label to the left */
+    position: relative;
+}
+
+.form-field label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+/*here*/
+
+.order-container {
+    background: #fff;
+    padding: 24px 32px 16px 32px;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+label {
+    font-weight: 500;
+}
+
+input[type="text"] {
+    padding: 6px 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.item-row {
+    display: flex;
+    gap: 14px;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.item-field {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.item-field label {
+    font-size: 13px;
+    color: #666;
+}
+
+.item-field input[type='number'] {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 15px;
+    width: 100px;
+}
+
+.product-name {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 15px;
+    width: 200px;
+}
+
+
+.product-unit {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 15px;
+    width: 50px;
+}
+
+.item-amount {
+    width: 80px;
+    text-align: right;
+    margin-top: 22px;
+    font-weight: bold;
+    color: #3a6;
+}
+
+.add-btn {
+    margin: 12px 0;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #38a;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.add-btn:hover {
+    background-color: #2566aa;
+}
+
+.remove-item-btn {
+    margin: 2px 0;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #d35a5a;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.remove-item-btn:hover {
+    background-color: #a83030;
+}
+
+.order-summary {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.order-summary label {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#totalAmount {
+    padding: 0 6px;
+    font-size: 18px;
+    color: #38a;
+    font-weight: bold;
+}
+
+#order-btn {
+    margin-left: 450px;
+    background: #3a6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#order-btn:hover {
+    background: #25754c;
+}
+
+#cart-btn {
+    background: #42e649;
+    float: right;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    font-size: 16px;
+}
+
+#cart-btn:hover {
+    background: #2fad31;
+    box-shadow: 0 4px 12px rgba(66, 230, 73, 0.25);
+}
+
+#error-msg {
+    color: #b00020;
+    background-color: #fddede;
+    border-radius: 4px;
+    font-size: 1rem;
+    max-width: 250px;
+    margin: 8px 0;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown-results {
+    position: absolute;
+    background: white;
+    width: 200px;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 60px;
+}
+
+.dropdown-results div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dropdown-results div:hover {
+    background: #eee;
+}
+
+#new-btn {
+    background: #42e649;
+    float: right;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    font-size: 16px;
+}
+
+#new-btn:hover {
+    background: #2fad31;
+    box-shadow: 0 4px 12px rgba(66, 230, 73, 0.25);
+}

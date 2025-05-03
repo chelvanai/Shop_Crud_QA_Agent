@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="../static/css/home_style.css">
+    <link rel="stylesheet" href="../static/css/analytics_style.css?v=1">
+</head>
+<body>
+<div class="sidebar">
+    <a href="customer" class="nav-btn">Customer</a>
+    <a href="product" class="nav-btn">Product</a>
+    <a href="invoice" class="nav-btn">Invoice</a>
+    <a href="analytics" class="nav-btn">Analytics</a>
+</div>
+<div class="main-content">
+    <div class="form-wrapper">
+        <div class="input-row">
+            <select id="table-category">
+                <option value="order">order</option>
+                <option value="customer">customer</option>
+                <option value="product">product</option>
+            </select>
+            <input id="quesTextFiled" type="text" placeholder="Enter your question..."/>
+            <button id="searchButton" type="submit">Search</button>
+        </div>
+        <div id="result-div">
+            <!-- Results will appear here -->
+        </div>
+    </div>
+</div>
+<script src="../static/js/analytics_page.js?v=4"></script>
+</body>
+</html>
